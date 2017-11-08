@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import { warning } from './utils';
 
 class Event extends React.Component {
@@ -37,12 +37,12 @@ class Event extends React.Component {
 };
 
 Event.contextTypes = {
-  socket: React.PropTypes.object.isRequired
+  socket: PropTypes.object.isRequired
 };
 
 Event.propTypes = {
-  event: React.PropTypes.string.isRequired,
-  handler: React.PropTypes.func.isRequired
+  event: PropTypes.string.isRequired,
+  handler: PropTypes.func.isRequired
 };
 
 export default Event;

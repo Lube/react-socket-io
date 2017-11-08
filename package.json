@@ -8,6 +8,7 @@
     "start": "gulp"
   },
   "dependencies": {
+    "prop-types": "^15.6.0",
     "socket.io-client": "^1.5.0"
   },
   "devDependencies": {
