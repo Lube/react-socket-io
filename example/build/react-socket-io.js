@@ -218,7 +218,7 @@ var Socket = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2.default.Children.only(this.props.children);
+      return this.props.children;
     }
   }]);
   return Socket;

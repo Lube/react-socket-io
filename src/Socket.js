@@ -13,7 +13,7 @@ class Socket extends React.Component {
     super(props, context);
 
     this.socket = SocketIO(props.uri, this.mergeOptions(props.options));
-
+    
     this.socket.status = 'initialized';
 
     this.socket.on('connect', (data) => {
@@ -65,7 +65,7 @@ class Socket extends React.Component {
   }
 
   render() {
-    return React.Children.only(this.props.children);
+    return this.props.children;
   }
 }
 
